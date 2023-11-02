@@ -5,45 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HW2</title>
     <style>
-      * {
-        color: white;
-      }
       body {
         color: white;
-        background: linear-gradient(
-            0deg,
-            rgba(0, 0, 0, 0.7),
-            rgba(0, 0, 0, 0.7)
-          ),
-          url("https://picsum.photos/100");
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://shanpig.github.io/mockup/img/hero.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
-        height: 200vh;
+        height: 720vh;
       }
-
+      .section {
+        height: 80vh;
+      }
+      .header {
+        display: flex;
+        align-items: center;
+        margin: 3vw;
+        padding-top: 40px;
+      }
       .links {
-        top: 5%;
-        right: 1%;
-      }
-      .icon {
-        left: 6%;
-        top: 2%;
+        margin-left: auto;
       }
       a {
-        margin-right: 30px;
+        color: white;
+        font-size: 1.2vw;
+        margin-right: 100px;
         text-decoration: none;
       }
       a:hover {
         text-decoration: underline 3px orange;
       }
-
-      h1 {
-        left: 5%;
-        font-size: xx-large;
-        top: 40%;
-        max-width: 50%;
-        line-height: 2;
+      .section1 {
+        color: white;
+        margin: 3vw;
+      }
+      .content {
+        margin-top: 15vh;
+      }
+      .section1-h1 {
+        font-size: 3vw;
+        line-height: 10vh;
       }
 
       .btn {
@@ -52,10 +52,10 @@
         bottom: 30%;
       }
       button {
-        padding: 10px 40px;
-        border-radius: 30px;
+        padding: 20px 60px;
+        border-radius: 100px;
         margin-right: 30px;
-        font-size: xx-large;
+        font-size: 2vw;
       }
       .btn1 {
         background-color: orange;
@@ -73,15 +73,74 @@
         color: white;
         background-color: orangered;
       }
+      /* ________________Section 1 ________________________*/
+      .section2 {
+        outline: 2px solid green;
+        color: black;
+        background-color: white;
+        padding: 3vw;
+      }
+      p {
+        font-size: 1.2vw;
+      }
+      h3 {
+        font-size: 1.6vw;
+        margin: 0;
+      }
+      ul {
+        display: flex;
+        justify-content: space-around;
+      }
+      li {
+        align-items: stretch;
+        max-width: 18vw;
+      }
+      .tilteP {
+        text-align: center;
+        line-height: 1.5vw;
+        max-width: 60vw;
+      }
+      .section2-h1 {
+        font-size: 3vw;
+      }
+      .underlineP {
+        color: orange;
+        font-weight: bold;
+      }
+      .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .warpper-box2 {
+        line-height: 2vw;
+      }
 
-      .section {
-        height: 100vh;
+      /* ________________Section 2 ________________________*/
+      .section3-wrapper {
+        /* outline: 5px solid blueviolet; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .img-3 {
+        width: 100%;
+        height: auto;
+      }
+      /* ________________Section 5 ________________________*/
+      .section6 {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        background-image: url(https://shanpig.github.io/mockup/img/back-customers.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
       }
     </style>
   </head>
   <body>
     <div class="header">
-      <img class="icon" src="https://picsum.photos/70/70" alt="" />
+      <img class="icon" src="	https://shanpig.github.io/mockup/img/logo-white.png" alt="" />
       <div class="links">
         <a href="">FOOD DELIVERY</a>
         <a href="">HOW IT WORKS</a>
@@ -92,7 +151,7 @@
 
     <div class="section section1">
       <div class="content">
-        <h1>
+        <h1 class="section1-h1">
           GOODBYE JUNK FOOD. <br />
           HELLO SUPER HEALTHY MEALS.
         </h1>
@@ -103,6 +162,105 @@
       </div>
     </div>
 
-    <div class="section section2" style="background-color: white"></div>
+    <div class="section section2">
+      <div class="title">
+        <h1 class="section2-h1">GET FOOD FAST - NOT FAST FOOD</h1>
+        <p class="underlineP">________________________</p>
+        <p class="tilteP">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam numquam non porro autem sit, possimus rem cupiditate, aliquam libero laborum
+          adipisci totam cumque nesciunt modi impedit culpa odit vitae.
+        </p>
+      </div>
+      <ul class="warpper-box2">
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>Up to 365 Days/Year</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>Ready in 20 Minutes</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>100% Organic</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>Order Anything</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section section3">
+      <div>
+        <ul class="section3-wrapper">
+          <li class="section3-img">
+            <img class="img-3" src="https://shanpig.github.io/mockup/img/gallery/1.jpg" alt="" />
+          </li>
+          <li class="section3-img">
+            <img class="img-3" src="https://shanpig.github.io/mockup/img/gallery/1.jpg" alt="" />
+          </li>
+          <li class="section3-img">
+            <img class="img-3" src="https://shanpig.github.io/mockup/img/gallery/3.jpg" alt="" />
+          </li>
+          <li class="section3-img">
+            <img class="img-3" src="https://shanpig.github.io/mockup/img/gallery/4.jpg" alt="" />
+          </li>
+          <!-- <li class="section3-img">
+            <img
+              class="img-3"
+              src="https://shanpig.github.io/mockup/img/gallery/4.jpg"
+              alt=""
+            />
+          </li>
+          <li class="section3-img">
+            <img
+              class="img-3"
+              src="https://shanpig.github.io/mockup/img/gallery/4.jpg"
+              alt=""
+            />
+          </li>
+          <li class="section3-img">
+            <img
+              class="img-3"
+              src="https://shanpig.github.io/mockup/img/gallery/4.jpg"
+              alt=""
+            />
+          </li>
+          <li class="section3-img">
+            <img
+              class="img-3"
+              src="https://shanpig.github.io/mockup/img/gallery/4.jpg"
+              alt=""
+            />
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="section section4" style="background-color: lightgray"></div>
+    <div class="section section5" style="background-color: white"></div>
+    <div class="section section6"></div>
+    <div class="section section4" style="background-color: lightgray"></div>
+    <div class="section section8" style="background-color: white"></div>
   </body>
 </html>
