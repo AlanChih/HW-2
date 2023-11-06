@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+      body {
+        font-family: "Heebo", sans-serif;
+        color: white;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://shanpig.github.io/mockup/img/hero.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      h1 {
+        font-size: 2vw;
+        margin-top: 0%;
+      }
+      li {
+        list-style: none;
+      }
+      .section {
+        /* height: 80vh; */ /* adjust in the future  */
+        /* width: 100%; Q2*/
+        height: 100vh;
+      }
+      /* ________________CSS Header________________________*/
+      .header {
+        display: flex;
+        align-items: center;
+        padding: 2vw;
+        padding-top: 40px;
+      }
+      .icon {
+        width: 100%;
+        max-width: 130px;
+      }
+      .links {
+        margin-left: auto;
+      }
+      .header a {
+        color: white;
+        font-size: 0.7vw;
+        margin-right: 30px;
+        text-decoration: none;
+        text-decoration: orange;
+      }
+      .header a:hover {
+        transition: all 0.7s ease;
+        text-underline-position: under;
+        text-underline-offset: 12px;
+        text-decoration: underline 5px orange;
+      }
+      /* ________________CSS Section 1 ________________________*/
+      .section1 {
+        color: white;
+        padding: 3vw;
+      }
+      .content {
+        margin-top: 15vh;
+      }
+      .section1-h1 {
+        font-size: 2vw;
+        line-height: 10vh;
+      }
+      .section1 button {
+        /*.btn1 .btn2 ?? Q1 */
+        padding: 10px 20px;
+        border-radius: 100px;
+        margin-right: 30px;
+        font-size: 1vw;
+        margin-right: 20px;
+      }
+      .btn1 {
+        color: white;
+        background-color: orange;
+        border: none;
+      }
+      .btn1:hover {
+        transition: all 0.7s ease;
+        background-color: orangered;
+      }
+      .btn2 {
+        background-color: transparent;
+        color: orange;
+        border: 3px solid orange;
+      }
+      .btn2:hover {
+        transition: all 0.7s ease;
+        color: white;
+        background-color: orangered;
+      }
+      /* ________________CSS Section 2 ________________________*/
+      .section2 {
+        /* outline: 2px solid green; */
+        color: black;
+        background-color: white;
+        padding: 3vw;
+      }
+      .section2 p {
+        font-size: 1vw;
+      }
+      .section2 h3 {
+        font-size: 1vw;
+        margin: 0;
+      }
+      .section2 ul {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+      }
+      .section2 li {
+        text-align: left;
+        max-width: 18vw;
+      }
+      .tilte-P {
+        text-align: center;
+        line-height: 1.5vw;
+        max-width: 60vw;
+      }
+      .section2-h1 {
+        margin: 0 auto;
+      }
+      .underline-P {
+        color: orange;
+        font-weight: bold;
+      }
+      .section2 img {
+        width: 100px;
+      }
+      .section2 .title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .warpper-box2 {
+        line-height: 2vw;
+      }
+      /*------------------------CSS Section3------------------------ */
+      .section3 {
+        background: lightgray;
+        height: 20vw;
+        display: flex;
+        background-color: black;
+      }
+      .photo-gallery {
+        border: 1px solid black;
+        height: 20vw;
+        width: 25vw;
+        overflow: hidden;
+        position: relative;
+      }
+      .photo-gallery > img {
+        height: 20vw;
+        width: 25vw;
+        transform: scale(1.1);
+        transition: all 0.7s ease;
+        opacity: 0.5;
+      }
+      .photo-gallery:hover img {
+        transform: scale(1);
+        opacity: 1;
+      }
+
+      /* .mask {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(rgb(0 0 0 /0.5), rgb(0 0 0 /0.5));
+        transition: opacity 0.7s ease;
+      }
+
+      .child:hover .mask {
+        opacity: 0.1;
+      } */ /*This is the second method to program the same mask function without applying black background & modify it with opacity*/
+
+      /*-------------------------CSS Section4------------------------*/
+      .section4 {
+        background-color: lightgray;
+        color: black;
+      }
+      .section4 h1 {
+        margin: auto;
+        padding-top: 1vw;
+      }
+      .section4-title p {
+        margin: 0%;
+        color: orange;
+      }
+      .section4-title {
+        font-size: 1vw;
+        text-align: center;
+      }
+      .section4-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 2vw;
+        margin-bottom: 100vw;
+      }
+      .section4-list {
+        list-style-type: none;
+        margin-left: 2vw;
+      }
+      .phone {
+        max-width: 295px;
+        max-height: 600px;
+      }
+      .steps {
+        display: flex;
+        align-items: center;
+        margin: 2vw auto;
+      }
+      .number {
+        font-size: 2vw;
+        height: 3vw;
+        width: 3vw;
+        text-align: center;
+        border: 5px solid orange;
+        border-radius: 50%;
+        padding: 1vw;
+        margin-top: 1.5vh;
+        margin-right: 2vh;
+      }
+      .section4-P {
+        font-size: 0.7vw;
+        line-height: 1.5vw;
+      }
+      .store {
+        width: 8vw;
+        max-height: 150px;
+        margin-top: 2vh;
+      }
+      .apple {
+        margin-left: 3vh;
+      }
+      /*-------------------------CSS Section5------------------------*/
+      .section5 {
+        padding-top: 40px;
+        background-color: white;
+        color: black;
+        text-align: center;
+      }
+      .section5 ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0%; /* why padding ? */
+      }
+      .section5 .second-list {
+        text-align: left;
+        line-height: 2vw;
+      }
+      .section5 li {
+        text-align: left;
+      }
+      .section5 .location-name {
+        font-weight: bolder;
+      }
+      .section5 > p {
+        color: orange;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .section5 .location-photo {
+        width: 400px;
+        max-width: 450px;
+      }
+      .section5 a {
+        color: orange;
+      }
+      .section5 .second-list > img {
+        /* outline: 1px solid orange; */
+        width: 15px;
+      }
+      /* .section5 .twitter-icon {
+        width: 80px;
+      } */
+      /*-------------------------CSS Section6------------------------*/
+      .section6 {
+        text-align: center;
+        height: 50vh;
+        padding-top: 40px;
+        font-size: 1vw;
+      }
+      .section6 ul {
+        display: flex;
+        justify-content: space-between;
+      }
+      .section6 li {
+        text-align: left;
+        max-width: 600px;
+      }
+      .section6 > p {
+        color: orange;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .section6 .customer {
+        display: flex;
+      }
+      .customer-photo {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+      }
+      .section6 li > img {
+        width: 20px;
+        margin-bottom: 20px;
+      }
+      .section6 .customer > p {
+        margin-left: 10px;
+        font-size: 1vw;
+      }
+      /*-------------------------CSS Section7------------------------*/
+      .section7 {
+        background-color: lightgray;
+        color: black;
+        text-align: center;
+        padding-top: 40px;
+      }
+      .section7 ul {
+        display: flex;
+        justify-content: space-around;
+        padding: 0%;
+      }
+      .section7 li {
+        width: 25vw;
+        padding: 1.5vw;
+        background-color: white;
+        text-align: left;
+      }
+      .section7 > p {
+        color: orange;
+        font-weight: bold;
+        margin-bottom: 40px;
+      }
+      .section7 .list-title {
+        font-weight: bold;
+        font-size: 1.5vw;
+      }
+      .section span {
+        color: orange;
+      }
+      .section7 span:nth-of-type(1) {
+        font-weight: bolder;
+        font-size: 4vw;
+        margin-bottom: 1vw;
+      }
+      .section7 .checklist {
+        display: flex;
+      }
+      .section7 .checklist > img {
+        width: 25px;
+      }
+      .section7 .checklist > p {
+        margin-left: 10px;
+      }
+      /* .section7 li p:nth-of-type(2) {
+        margin-bottom: 0;
+      } */
+      .section7 .section7-linebreak {
+        margin-top: 0;
+        background-color: black;
+        height: 1px;
+        width: 100%;
+      }
+      .section7 button {
+        padding: 10px 20px;
+        border-radius: 100px;
+        font-size: 1vw;
+        color: white;
+        background-color: orange;
+        margin-left: 33%;
+        border: 0;
+      }
+      .section7 .btn7-2 {
+        background-color: white;
+        border: 1px solid orange;
+        color: orange;
+      }
+      .btn7-1:hover {
+        transition: all 1s ease;
+        background-color: orangered;
+      }
+      .btn7-2:hover {
+        transition: all 1s ease;
+        color: white;
+        background-color: orangered;
+      }
+      .li-7-3 {
+        color: white;
+        /*how to display empty content <p> tag */
+      }
+      /*-------------------------CSS Section8------------------------*/
+      .section8 {
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding-top: 40px;
+      }
+      .section8 li {
+        display: flex;
+        justify-content: center;
+      }
+      .section-input-title {
+      }
+      /*-------------------------Css footer------------------------*/
+      .footer {
+        background-color: #777777;
+        color: lightgray;
+        height: 10vh;
+        padding: 4vw;
+      }
+      .footer a {
+        color: lightgray;
+        text-decoration: none;
+        margin-right: 1vw;
+      }
+      .footer img {
+        width: 20px;
+        margin-right: 1vw;
+      }
+      .footer p {
+        text-align: center;
+        margin-top: 4vh;
+      }
+      .footer-links {
+        display: flex;
+        align-items: center;
+      }
+      .footer-logo {
+        margin-left: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <!-------------------HTML Header------------------------------>
+    <div class="header">
+      <img class="icon" src="	https://shanpig.github.io/mockup/img/logo-white.png" alt="" />
+      <div class="links">
+        <a href="">FOOD DELIVERY</a>
+        <a href="">HOW IT WORKS</a>
+        <a href="">OUR CITY</a>
+        <a href="">SING UP</a>
+      </div>
+    </div>
+    <!-------------------HTML　section1------------------------------>
+    <div class="section1 section">
+      <div class="section1-content">
+        <h1 class="section1-h1">
+          GOODBYE JUNK FOOD. <br />
+          HELLO SUPER HEALTHY MEALS.
+        </h1>
+        <div class="section1-btn">
+          <button class="btn1 btn">I'm hungry</button>
+          <button class="btn2 btn">Show me more</button>
+        </div>
+      </div>
+    </div>
+    <!-------------------HTML section2------------------------------>
+    <div class="section2 section">
+      <div class="title">
+        <h1 class="section2-h1">GET FOOD FAST - NOT FAST FOOD</h1>
+        <p class="underline-P">________________________</p>
+        <p class="tilte-P">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aperiam numquam non porro autem sit, possimus rem cupiditate, aliquam libero laborum
+          adipisci totam cumque nesciunt modi impedit culpa odit vitae.
+        </p>
+      </div>
+
+      <ul class="warpper-box2">
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>Up to 365 Days/Year</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>Ready in 20 Minutes</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>100% Organic</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+
+        <li>
+          <img src="	https://user-images.githubusercontent.com/9626697/28358984-6a658f26-6c8e-11e7-85ab-435bb04fab75.png" alt="" />
+          <h3>Order Anything</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae hic eius maiores aut veniam quidem officiis voluptatibus. Repudiandae quos vitae
+            animi. Beatae a fugit, pariatur dolores corporis necessitatibus! Molestiae, quod?
+          </p>
+        </li>
+      </ul>
+    </div>
+    <!-------------------HTML section3------------------------------>
+    <div class="section3 section">
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/1.jpg" />
+        <div class="mask"></div>
+      </div>
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/2.jpg" />
+      </div>
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/3.jpg" />
+      </div>
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/4.jpg" />
+      </div>
+    </div>
+
+    <div class="section3 section">
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/5.jpg" />
+        <div class="mask"></div>
+      </div>
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/6.jpg" />
+        <div class="mask"></div>
+      </div>
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/7.jpg" />
+        <div class="mask"></div>
+      </div>
+      <div class="photo-gallery">
+        <img src="https://shanpig.github.io/mockup/img/gallery/8.jpg" />
+        <div class="mask"></div>
+      </div>
+    </div>
+
+    <!-------------------HTML section4------------------------------>
+
+    <div class="section4 section">
+      <div class="section4-title">
+        <h1>HOW IT WORK - SIMPLE AS 1,2,3</h1>
+        <p>________________________</p>
+      </div>
+      <div class="section4-content">
+        <img src="https://shanpig.github.io/mockup/img/howTo/app-iPhone.png" alt="" class="phone" />
+        <ul class="section4-list">
+          <li class="steps">
+            <div class="number">1</div>
+            <p class="section4-P">Choose the subscription plan that best fits your needs and sign up today.</p>
+          </li>
+          <li class="steps">
+            <div class="number">2</div>
+            <p class="section4-P">Order your delicious meal using our mobile app or website. Or you can even call us!</p>
+          </li>
+          <li class="steps">
+            <div class="number">3</div>
+            <p class="section4-P">Enjoy your meal after less than 20 minutes. See you the next time!</p>
+          </li>
+          <li class="stores">
+            <img src="https://shanpig.github.io/mockup/img/howTo/download-app-android.png" alt="" class="store google" />
+            <img src="	https://shanpig.github.io/mockup/img/howTo/download-app.svg" alt="" class="store apple" />
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------HTML section5------------------------------>
+    <div class="section5 section">
+      <h1>WE'RE CURRENTLY IN THESE CITIES</h1>
+      <p>________________________</p>
+      <div class="section5-content">
+        <ul>
+          <!-------------------LISBON------------------------------>
+          <li>
+            <img src="https://shanpig.github.io/mockup/img/locations/lisbon-3.jpg" alt="" class="location-photo" />
+            <p class="location-name">LISBON</p>
+            <div class="second-list">
+              <img src="/person-svgrepo-com.svg" alt="" />
+              <span> 1600+ happy eaters</span>
+            </div>
+            <div class="second-list">
+              <img src="/star-svgrepo-com.svg" alt="" />
+              <span>60+ top chefs</span>
+            </div>
+            <div class="second-list">
+              <img src="/twitter-svgrepo-com.svg" alt="" />
+              <a href="#">@omnifood_lx</a>
+            </div>
+          </li>
+          <!-------------------SAN FRANCISCO------------------------------>
+          <li>
+            <img src="https://shanpig.github.io/mockup/img/locations/san-francisco.jpg" alt="" class="location-photo" />
+            <p class="location-name">SAN FRANCISCO</p>
+            <div class="second-list">
+              <img src="/person-svgrepo-com.svg" alt="" />
+              <span> 3700+ happy eaters</span>
+            </div>
+            <div class="second-list">
+              <img src="/star-svgrepo-com.svg" alt="" />
+              <span>160+ top chefs</span>
+            </div>
+            <div class="second-list">
+              <img src="/twitter-svgrepo-com.svg" alt="" />
+              <a href="#"> @omnifood_sf</a>
+            </div>
+          </li>
+          <!-------------------BERLIN------------------------------>
+          <li>
+            <img src="https://shanpig.github.io/mockup/img/locations/berlin.jpg" alt="" class="location-photo" />
+            <p class="location-name">BERLIN</p>
+            <div class="second-list">
+              <img src="/person-svgrepo-com.svg" alt="" />
+              <span> 2300+ happy eaters</span>
+            </div>
+            <div class="second-list">
+              <img src="/star-svgrepo-com.svg" alt="" />
+              <span>110+ top chefs</span>
+            </div>
+            <div class="second-list">
+              <img src="/twitter-svgrepo-com.svg" alt="" />
+              <a href="#"> @omnifood_berlin</a>
+            </div>
+          </li>
+          <!-------------------LONDON------------------------------>
+          <li>
+            <img src="https://shanpig.github.io/mockup/img/locations/london.jpg" alt="" class="location-photo" />
+            <p class="location-name">LONDON</p>
+            <div class="second-list">
+              <img src="/person-svgrepo-com.svg" alt="" />
+              <span> 1200+ happy eaters</span>
+            </div>
+            <div class="second-list">
+              <img src="/star-svgrepo-com.svg" alt="" />
+              <span>50+ top chefs</span>
+            </div>
+            <div class="second-list">
+              <img src="/twitter-svgrepo-com.svg" alt="" class="twitter-icon" />
+              <a href="#"> @omnifood_london</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------HTML section6------------------------------>
+
+    <div class="section6 section">
+      <h1>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h1>
+      <p>________________________</p>
+      <div class="section6-content">
+        <ul>
+          <li>
+            <img src="/quotation-right-mark-svgrepo-com.svg" alt="" />
+            <p>
+              Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to
+              it, I couldn't live without my daily meals!
+            </p>
+            <div class="customer">
+              <img src="https://shanpig.github.io/mockup/img/reviews/customer-1.jpg" alt="" class="customer-photo" />
+              <p>Alberto Duncan</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="/quotation-right-mark-svgrepo-com.svg" alt="" />
+            <p>
+              Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to
+              it, I couldn't live without my daily meals!
+            </p>
+            <div class="customer">
+              <img src="https://shanpig.github.io/mockup/img/reviews/customer-2.jpg" alt="" class="customer-photo" />
+              <p>Joana Silva</p>
+            </div>
+          </li>
+
+          <li>
+            <img src="/quotation-right-mark-svgrepo-com.svg" alt="" />
+            <p>
+              Omnifood is just awesome! I just launched a startup which leaves me with no time for cooking, so Omnifood is a life-saver. Now that I got used to
+              it, I couldn't live without my daily meals!
+            </p>
+            <div class="customer">
+              <img src="https://shanpig.github.io/mockup/img/reviews/customer-3.jpg" alt="" class="customer-photo" />
+              <p>Milton Chapman</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------HTML section7------------------------------>
+    <div class="section7 section">
+      <h1>START EATING HEALTHY TODAY</h1>
+      <p>________________________</p>
+      <div class="section7-content">
+        <ul>
+          <!-------------------section7 list1------------------------------>
+          <li>
+            <p class="list-title">PREMIUM</p>
+            <span>$399</span>
+            <span>/month</span>
+            <p>That's only $13.30 per meal</p>
+            <p class="section7-linebreak"></p>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>1 meal every day</p>
+            </div>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>Order 24/7</p>
+            </div>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>Access to newest creations</p>
+            </div>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>Free delivery</p>
+            </div>
+            <p class="section7-linebreak"></p>
+            <button class="btn7-1">Sign Up Now</button>
+          </li>
+          <!-------------------section7 list2------------------------------>
+          <li>
+            <p class="list-title">PREMIUM</p>
+            <span>$149</span>
+            <span>/month</span>
+            <p>That's only $14.90 per meal</p>
+            <p class="section7-linebreak"></p>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>1 meal every day</p>
+            </div>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>Order 24/7</p>
+            </div>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>Access to newest creations</p>
+            </div>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>Free delivery</p>
+            </div>
+            <p class="section7-linebreak"></p>
+            <button class="btn7-2">Sign Up Now</button>
+          </li>
+          <!-------------------section7 list2------------------------------>
+          <li>
+            <p class="list-title">PREMIUM</p>
+            <span>$19</span>
+            <span>/month</span>
+            <p class="li-7-3">None</p>
+            <p class="section7-linebreak"></p>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>1 meal every day</p>
+            </div>
+            <div class="checklist">
+              <img src="/check-svgrepo-com.svg" alt="" />
+              <p>Order 24/7</p>
+            </div>
+            <div class="checklist">
+              <img src="/cross-svgrepo-com.svg" alt="" />
+              <p>Access to newest creations</p>
+            </div>
+            <div class="checklist">
+              <img src="/cross-svgrepo-com.svg" alt="" />
+              <p>Free delivery</p>
+            </div>
+            <p class="section7-linebreak"></p>
+            <button class="btn7-2">Sign Up Now</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-------------------section8------------------------------>
+    <div class="section8 section">
+      <h1>WE'RE HAPPY TO HEAR FROM YOU</h1>
+      <p>________________________</p>
+      <ul>
+        <li>
+          <div class="section-input-title">
+            <label for="Name">Name*</label>
+          </div>
+          <input type="text" placeholder="Your Name" />
+        </li>
+        <li>
+          <div class="section-input-title">
+            <label for="Email">Email*</label>
+          </div>
+          <input type="text" placeholder="Your Email" />
+        </li>
+        <li>
+          <div class="section-input-title">
+            <label for="HowUFind">How do you find us?</label>
+          </div>
+          <select name="HowUFind" id="" type="text">
+            <option value="Friend">Friend</option>
+            <option value="Google">Google</option>
+            <option value="Advertisement">Advertisement</option>
+            <option value="other">Other</option>
+          </select>
+        </li>
+        <li>
+          <div class="section-input-title">
+            <label for="Newsletter">Newsletter?</label>
+          </div>
+          <input type="checkbox" name="Yes, Please" id="Newsletter" checked />
+          Yes, Please.
+        </li>
+        <li>
+          <div class="section-input-title">
+            <label for="Dropline">Drop us a line</label>
+          </div>
+          <textarea name="" id="Dropline" cols="30" rows="10"></textarea>
+        </li>
+      </ul>
+      <button>Send it!</button>
+    </div>
+    <!-------------------footer------------------------------>
+    <div class="footer">
+      <div class="footer-links">
+        <div class="footer-link"><a href="#">About us</a><a href="#">Blog</a><a href="#">Press</a><a href="#">IOS App</a><a href="#">Android App</a></div>
+        <div class="footer-logo">
+          <img src="/facebook-svgrepo-com.svg" alt="" /><img src="/twitter-154-svgrepo-com.svg" alt="" /><img src="/google-plus-svgrepo-com.svg" alt="" /><img
+            src="/instagram-svgrepo-com.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <p>Copyright © 2015 by Omnifood. All rights reserved.</p>
+    </div>
+  </body>
+</html>
